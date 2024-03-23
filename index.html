@@ -32,6 +32,22 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .trait {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .trait .text,
+        .trait .image {
+            flex: 1;
+        }
+        .trait .text {
+            padding-right: 20px;
+            text-align: right;
+        }
+        .trait .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -42,13 +58,19 @@
         <img src="kyryl.jpg" alt="Mike">
         <div class="pet-description">
             <h2>Mike</h2>
-            <p><strong>Age:</strong> 2 years</p>
-            <p><strong>Breed:</strong> Labrador Retriever</p>
-            <p><strong>Description:</strong> Mike is very active and playful. He loves going for long walks and playing fetch in the park. He can be a bit shy around new people but quickly warms up to them.</p>
-            <div>
-                <img src="kyryl1.jpg" alt="Mike">
-                <img src="kyryl2.jpg" alt="Mike">
-                <img src="kyryl3.jpg" alt="Mike">
+            <p><strong>Age:</strong> 22 years</p>
+            <p><strong>Breed:</strong> Golden Labrador Retriever</p>
+            <div class="trait">
+                <div class="text">He's very playful and happy</div>
+                <div class="image"><img src="1.jpg" alt="Playful"></div>
+            </div>
+            <div class="trait">
+                <div class="image"><img src="2.jpg" alt="Long Walk"></div>
+                <div class="text">He enjoys long walks in the park</div>
+            </div>
+            <div class="trait">
+                <div class="text">He's a bit shy around new people</div>
+                <div class="image"><img src="3.jpg" alt="Shy"></div>
             </div>
         </div>
     </div>
