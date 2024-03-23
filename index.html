@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background-color: #f90;
             color: #fff;
             padding: 10px 20px;
             text-align: center;
@@ -35,7 +35,7 @@
         .trait {
             display: flex;
             margin-bottom: 20px;
-            font-size: 60px;
+      		font-size: 60px;
         }
         .trait .text,
         .trait .image {
@@ -49,6 +49,23 @@
             width: 100%;
             border-radius: 10px;
         }
+       .trait .video {
+            flex: 1;
+        }
+       .trait .video video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .video-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .video-row video {
+            max-width: 100%;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -56,22 +73,41 @@
         <h1>Pet Adoption</h1>
     </header>
     <div class="pet-details">
-        <img src="kyryl.jpg" alt="Mike">
+        <img src="kyryl.jpeg" alt="Mike">
         <div class="pet-description">
-            <h2>Mike</h2>
-            <p><strong>Age:</strong> 22 years</p>
-            <p><strong>Breed:</strong> Golden Labrador Retriever</p>
+            <h2>Кирилллл</h2>
+            <p><strong>Вік:</strong> 22 роки</p>
+            <p><strong>Порода:</strong> Золотистий лабрадор ретривер</p>
             <div class="trait">
-                <div class="text">He's very playful and happy</div>
-                <div class="image"><img src="1.jpg" alt="Playful"></div>
+                <div class="text">Дуже активний та прошарений. Ніколи не підіймає п'ятки на кортанах</div>
+                <div class="image"><img src="1.jpeg" alt="Playful"></div>
             </div>
             <div class="trait">
-                <div class="image"><img src="2.jpg" alt="Long Walk"></div>
-                <div class="text">He enjoys long walks in the park</div>
+                <div class="image"><img src="2.jpeg" alt="Long Walk"></div>
+                <div class="text">Іноді тей ще скромняга, але варто запустити його в батлу, і він змінюється на очах.</div>
             </div>
             <div class="trait">
-                <div class="text">He's a bit shy around new people</div>
-                <div class="image"><img src="3.jpg" alt="Shy"></div>
+                <div class="text">Будьте готові, він дуже прожерливий. Але іноді і сам купує вам шаурму</div>
+                <div class="image"><img src="3.jpeg" alt="Shy"></div>
+            </div>
+			<div class="trait">
+                <div class="image"><img src="5.jpeg" alt="Long Walk"></div>
+                <div class="text">Любить валятися і відпочивати. Іноді втикає. Може він бачить там рішення 1000-ї проблеми з математики</div>
+            </div>
+            <div class="trait">
+                <div class="text">Але загалом ви з ним точно не засумуєте!</div>
+                <div class="image"><img src="6.jpeg" alt="Shy"></div>
+            </div>
+              <div class="trait">
+                <div>Користуючись нагодою, хочемо повідомити вас, що в Кирила сьогодні день народження! Тож якщо ви давно мріяли про чудового, розумного, веселого та цікавого друга, то радимо привітати його зі святом, що робимо і ми)
+
+</div>
+            </div>
+              <div class="trait">
+                <div class="video"><video controls><source src="shy.mp4" type="video/mp4"></video></div>
+            </div>
+            <div class="trait">
+                <div class="video"><video controls><source src="shy.mp4" type="video/mp4"></video></div>
             </div>
         </div>
     </div>
